@@ -14,7 +14,7 @@ export default function About(){
           <h1>Merhaba,ben <span>Berat Arif Gönül</span></h1>
           <p>Frontend odaklı projeler geliştiriyorum. Modern, performanslı ve kullanıcı deneyimi güçlü bweb arayüzleri tasarlıyorum. Şu anda full-stack yolunda ilerliyorum ve sistem tarafında C/C++ ile performans ve bellek yönetimi üzerinde çalışıyorum.</p>
           <p>Hedefim sadece site yapmak değil; güçlü, optimize ve üretim seviyesinde projeler geliştirmek.</p>
-          <Link className="about-links" href="#Contact">
+          <Link className="about-links" href="#contact">
           <button>Benimle iletişime geçin</button>
            </Link>
         </div>
