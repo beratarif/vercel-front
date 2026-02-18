@@ -4,13 +4,13 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
 body {
   background-color: black;
- 
+
 }
 
 .navbar {
@@ -45,7 +45,7 @@ body {
   transition: color 0.2s ease-in;
 }
 
-.nav-links:hover{
+.nav-links:hover {
   color: red;
 }
 
@@ -87,8 +87,7 @@ body {
   padding: 5px 12px;
 }
 
-.about-section {
-}
+.about-section {}
 
 .about-container {
   display: flex;
@@ -316,23 +315,100 @@ body {
   font-size: 14px;
 }
 
-.mobile-menu{
- display: none; 
+.mobile-menu {
+  display: none;
 }
-@media (max-width: 768px){
-  .desktop-nav{
+
+@media (max-width: 768px) {
+  .desktop-nav {
     display: none;
   }
 
-  .mobile-menu{
-    display: flex;
+  .mobile-menu {
+    display: none;
     align-items: center;
     justify-content: space-between;
     padding: 20px 5px;
- }
- .nav-list{
-  justify-content: space-between;
+  }
+
+  .nav-list {
+    justify-content: space-between;
+    display: flex;
+    gap: 44px;
+  }
+
+  .about-container {
+    gap: 0px;
+  }
+}
+
+/* Desktop nav */
+.desktop {
   display: flex;
-  gap:44px;
- }
+  gap: 40px;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: white;
+  transition: 0.3s;
+}
+
+/* Animate to X */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Mobile menu hidden by default */
+.mobile-menu {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 100%;
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+  gap: 25px;
+  transform: translateY(-200%);
+  transition: 0.3s;
+}
+
+.mobile-menu.show {
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+  .nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5px;
+  }
 }
