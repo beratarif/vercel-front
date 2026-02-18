@@ -1,17 +1,17 @@
 export default function Navbar(){
   return(
-    <nav className="fixed top-0 w-full bg-black/70 backdrop-blur-md text-white z-50">
-      <div className="max-w-6xl mx-auto flex justify-between items-center p-5">
-        <h2 className="font-bold text-lg">Berat.</h2>
+    <nav className="navbar">
+      <div className="nav-container">
+        <h2 className="nav-head">Berat.</h2>
 
-        <div className="space-x-6 text-gray-400 hidden md:flex">
-          <a href="#about" className="hover:text-white transition">
+        <div className="nav-list">
+          <a href="#about" className="nav-link">
             About
           </a>
-          <a href="#projects" className="hover:text-white transition">
+          <a href="#projects" className="nav-link">
             Projects
           </a>
-          <a href="#contact" className="hover:text-white transition">
+          <a href="#contact" className="nav-link">
             Contact
             </a>
         </div>

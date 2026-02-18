@@ -1,16 +1,18 @@
 export default function Hero(){
   return(
-    <section className="h-screen flex flex-col items-center justify-center text-center bg-black text-white px-6">
-      <h1 className="text-5xl md:text-7xl font-bold mb-6">
+
+    <section className="hero-section">
+      <h1 className="name">
         Berat Arif Gönül
       </h1>
 
-      <p className="text-gray-400 text-lg md:text-xl max-w-xl">
+      <p className="description">
         Software Developer focused on building modern and scalable applications.
       </p>
       
-      <div className="mt-8 flex gap-4">
-        <a href="#projects" className="px-6 py-3 bg-white text-black rounded-full font-medium hover:scale-105 transition"></a>
+      <div className="links">
+        <a href="#projects" className="button">View Project</a>
+        <a href="#contact" className="button">Contact</a>
       </div>
     </section>
   )
