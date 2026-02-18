@@ -21,7 +21,7 @@ body {
   left: 0;
 }
 
-.desktop-nav {
+.nav-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -412,3 +412,4 @@ body {
     padding: 20px 5px;
   }
 }
+
