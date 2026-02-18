@@ -52,20 +52,6 @@ export default function Projects() {
       tech: ["Next.js", "TypeScript", "CSS"],
       link: "#",
     },
-    {
-      title: "PHP Blog Sistemi",
-      description:
-        "Admin paneli olan, kategori ve yazı yönetimi yapılabilen blog sistemi.",
-      tech: ["PHP", "MySQL"],
-      link: "#",
-    },
-    {
-      title: "C++ Terminal Oyunu",
-      description:
-        "Bellek yönetimi ve performans odaklı geliştirilen terminal tabanlı oyun.",
-      tech: ["C++"],
-      link: "#",
-    },
   ];
 
   return (
