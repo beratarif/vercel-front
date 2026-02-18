@@ -21,7 +21,7 @@ body {
   left: 0;
 }
 
-.nav-container {
+.desktop-nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -314,4 +314,25 @@ body {
   text-align: center;
   color: #777;
   font-size: 14px;
+}
+
+.mobile-menu{
+ display: none; 
+}
+@media (max-width: 768px){
+  .desktop-nav{
+    display: none;
+  }
+
+  .mobile-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5px;
+ }
+ .nav-list{
+  justify-content: space-between;
+  display: flex;
+  gap:44px;
+ }
 }
