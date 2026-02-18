@@ -36,11 +36,6 @@ body {
   font-size: 32px;
 }
 
-.nav-list {
-  display: flex;
-  gap: 122px;
-}
-
 .nav-link {
   transition: color 0.2s ease-in;
 }
@@ -87,8 +82,6 @@ body {
   padding: 5px 12px;
 }
 
-.about-section {}
-
 .about-container {
   display: flex;
   justify-content: center;
@@ -96,6 +89,7 @@ body {
   max-width: 50%;
   margin: 0 auto;
   gap: 75px;
+  max-width: 1440px;
 }
 
 .aboutus-me {
@@ -106,6 +100,9 @@ body {
 
 .about-container h1 {
   font-size: 52px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
 .about-container h1 span {
@@ -116,6 +113,7 @@ body {
 .about-container p {
   font-size: 16px;
   color: wheat;
+  text-align: left;
 }
 
 .about-links {
@@ -413,3 +411,21 @@ body {
   }
 }
 
+@media (max-width:425px) {
+  .hero-section .name{
+    font-size: 40px;
+  }
+
+  .hero-section .description{
+    font-size:23px ;
+  }
+
+
+  .aboutus-me h1{
+    font-size: 23px;
+  }
+
+  .aboutus-me p{
+    max-width: 100%;
+  }
+}
