@@ -3,16 +3,16 @@ export default function Hero(){
 
     <section className="hero-section">
       <h1 className="name">
-        Berat Arif Gönül
+       By Lunar Development
       </h1>
 
       <p className="description">
-        Software Developer focused on building modern and scalable applications.
+        Front-End Web Developer <br/> Software Junior Developer
       </p>
       
       <div className="links">
-        <a href="#projects" className="button">View Project</a>
-        <a href="#contact" className="button">Contact</a>
+        <a href="#projects" className="button">Projelerim / View My Pojects</a>
+        <a href="#contact" className="button">İletişim / Contact</a>
       </div>
     </section>
   )

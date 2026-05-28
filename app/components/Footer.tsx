@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-left">
-          <h3>Berat Arif Gönül</h3>
+          <h3>By Lunar Development</h3>
           <p>
             Modern, performanslı ve üretim seviyesinde web projeleri
             geliştiriyorum.
@@ -40,7 +40,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        © {new Date().getFullYear()} Made Berat Arif Gönül
+        © 2025 Made By Lunar Development
       </div>
     </footer>
   );

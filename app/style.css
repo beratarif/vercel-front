@@ -35,14 +35,18 @@ body {
 
 .nav-head {
   font-size: 32px;
+  font-weight: 900;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke:2px maroon
 }
 
-.nav-link {
-  transition: color 0.2s ease-in;
+.nav-link{
+  color:#aaa;
+  transition: color 0.2s ease;
 }
 
-.nav-links:hover {
-  color: red;
+.nav-link:hover{
+  color: #f7ad23;
 }
 
 .hero-section,
@@ -59,12 +63,18 @@ body {
 .hero-section .name {
   font-size: 66px;
   font-weight: 800;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke:2px white;
+
 }
 
 .hero-section .description {
   font-size: 30px;
   max-width: 550px;
   margin: 0 auto;
+  font-weight: 700;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke:2px maroon;
 }
 
 .hero-section .links {
@@ -81,6 +91,11 @@ body {
   color: black;
   border-radius: 20px;
   padding: 5px 12px;
+  transition: all 0.2s ease;
+}
+
+.hero-section .button:hover{
+  background-color: maroon;
 }
 
 .about-container {
@@ -96,34 +111,37 @@ body {
 .aboutus-me {
   display: flex;
   flex-direction: column;
-  gap: 12px
+  gap: 12px;
 }
 
-.about-container h1 {
+.aboutus-me h1 {
   font-size: 52px;
   display: flex;
   flex-direction: column;
   text-align: left;
+  font-weight: 800;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke:2px maroon;
 }
 
-.about-container h1 span {
-  font-weight: 600;
-  color: white;
+.aboutus-me h1 span {
+  -webkit-text-fill-color: #0a0a0a;
 }
 
-.about-container p {
-  font-size: 16px;
-  color: wheat;
+.aboutus-me p {
   text-align: left;
+  font-size: 20px;
+  font-weight:600;
+  color: #aaa;
 }
 
 .about-links {
   background-color: cadetblue;
-  width: max-content;
   border-radius: 10px;
   padding: 5px 12px;
   text-align: center;
   margin: 23px auto;
+  cursor:pointer;
 }
 
 .contact-section {
@@ -144,7 +162,10 @@ body {
 
 .contact-info h2 {
   font-size: 36px;
+  font-weight: 800;
   margin-bottom: 20px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px maroon;
 }
 
 .social-links {
@@ -191,7 +212,8 @@ body {
 }
 
 .contact-form button:hover {
-  opacity: 0.8;
+  background-color: maroon;
+  opacity: 0.7;
 }
 
 .projects-section {
@@ -203,6 +225,9 @@ body {
 .projects-title {
   font-size: 40px;
   margin-bottom: 60px;
+  font-weight: 800;
+  -webkit-text-fill-color:transparent;
+  -webkit-text-stroke:2px maroon
 }
 
 .projects-grid {
@@ -220,8 +245,9 @@ body {
 }
 
 .project-card:hover {
-  transform: translateY(-10px);
-  border-color: #444;
+  border:1px solid #444;
+  background-color: maroon;
+  opacity: 0.6;
 }
 
 .project-card h3 {
@@ -269,11 +295,17 @@ body {
 
 .footer h3 {
   font-size: 24px;
+  font-weight: 800;
   margin-bottom: 15px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke:1px white;
 }
 
 .footer h4 {
   margin-bottom: 15px;
+  font-weight: 1000;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px white;
 }
 
 .footer p {

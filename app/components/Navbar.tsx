@@ -8,13 +8,13 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <h2 className="nav-head">Berat.</h2>
+        <h2 className="nav-head">By Lunar Development</h2>
 
         {/* Desktop Menu */}
         <div className="nav-list desktop">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+          <a className="nav-link" href="#about">Hakkımda</a>
+          <a className="nav-link" href="#projects">Projeler</a>
+          <a className="nav-link" href="#contact">İletişim</a>
         </div>
 
         {/* Hamburger */}

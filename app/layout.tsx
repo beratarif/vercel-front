@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Berat Arif Gönül",
-  description: "Made by Berat Arif Gönül",
+  title: "By Lunar Development",
+  description: "Made by Lunar Development",
 };
 
 export default function RootLayout({
