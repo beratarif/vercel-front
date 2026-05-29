@@ -8,7 +8,7 @@ export default function Projects() {
       description:
         "Tailwind CSS ile geliştirilmiş modern ve sade bir portföy sitesi.",
       tech: ["Tailwind CSS", "HTML"],
-      link: "https://beratgnl.online",
+      link: "https://beratgnl.netlify.app",
     },
     {
       title: "JSON Login Sistemi",
