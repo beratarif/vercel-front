@@ -36,8 +36,8 @@ body {
 .nav-head {
   font-size: 32px;
   font-weight: 900;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke:2px maroon
+  -webkit-text-fill-color: grey;
+  -webkit-text-stroke:2px white;
 }
 
 .nav-link{
@@ -63,7 +63,7 @@ body {
 .hero-section .name {
   font-size: 66px;
   font-weight: 800;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: grey;
   -webkit-text-stroke:2px white;
 
 }
@@ -114,6 +114,11 @@ body {
   gap: 12px;
 }
 
+.aboutus-profile{
+  border-radius: 50%;
+  align-items: center;
+}
+
 .aboutus-me h1 {
   font-size: 52px;
   display: flex;
@@ -121,11 +126,11 @@ body {
   text-align: left;
   font-weight: 800;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke:2px maroon;
+  -webkit-text-stroke:2px white;
 }
 
 .aboutus-me h1 span {
-  -webkit-text-fill-color: #0a0a0a;
+  -webkit-text-fill-color: grey;
 }
 
 .aboutus-me p {
@@ -165,7 +170,7 @@ body {
   font-weight: 800;
   margin-bottom: 20px;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px maroon;
+  -webkit-text-stroke: 2px maroon;
 }
 
 .social-links {
@@ -297,7 +302,7 @@ body {
   font-size: 24px;
   font-weight: 800;
   margin-bottom: 15px;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: grey;
   -webkit-text-stroke:1px white;
 }
 

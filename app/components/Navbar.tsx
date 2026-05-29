@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <h2 className="nav-head">By Lunar Development</h2>
+        <h2 className="nav-head">Berat Arif G.</h2>
 
         {/* Desktop Menu */}
         <div className="nav-list desktop">

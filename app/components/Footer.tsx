@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-left">
-          <h3>By Lunar Development</h3>
+          <h3>Berat Arif G.</h3>
           <p>
             Modern, performanslı ve üretim seviyesinde web projeleri
             geliştiriyorum.
@@ -40,7 +40,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        © 2025 Made By Lunar Development
+        © 2025 Made Developed By Berat Arif G.
       </div>
     </footer>
   );

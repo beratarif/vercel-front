@@ -3,7 +3,7 @@ export default function Hero(){
 
     <section className="hero-section">
       <h1 className="name">
-       By Lunar Development
+       Berat Arif G.
       </h1>
 
       <p className="description">

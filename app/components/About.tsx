@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import Profile from "../assets/image/IMG_20260529_202913_288.webp"
 
 export default function About() {
   return (
@@ -9,15 +10,16 @@ export default function About() {
       <div className="about-container">
         <div className="profile-photo">
           <Image
-            src="/favicon.ico"
-            alt="By Lunar Development"
+            src={Profile}
+            alt="Developed By Berat Arif G."
             width={520}
             height={520}
+            className="aboutus-profile"
           ></Image>
         </div>
         <div className="aboutus-me">
           <h1>
-            Merhaba,ben <span>Lunar</span>
+            Merhaba,ben <span>Berat Arif</span>
           </h1>
           <p>
             Frontend odaklı projeler geliştiriyorum. Modern, performanslı ve
