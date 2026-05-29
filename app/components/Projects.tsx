@@ -11,6 +11,14 @@ export default function Projects() {
       link: "https://beratgnl.netlify.app",
     },
     {
+      title: "Temel Portföy Sitesi",
+      description:
+        "Baştan yapılmış her hangi bir teknoloji kullanılmadan oluşturulmuş bir portföy sitesi.",
+      tech: ["HTML", "CSS", "JavaScript"],
+      link: "https://beratarifgnl.netlify.app",
+
+    },
+    {
       title: "JSON Login Sistemi",
       description:
         "Kullanıcı verilerinin JSON formatında tutulduğu bir giriş sistemi.",
