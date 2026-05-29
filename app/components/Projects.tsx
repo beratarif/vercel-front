@@ -15,7 +15,7 @@ export default function Projects() {
       description:
         "Kullanıcı verilerinin JSON formatında tutulduğu bir giriş sistemi.",
       tech: ["JSON", "Auth"],
-      link: "https:/jsonlogin.netlify.app",
+      link: "https://jsonlogin.netlify.app",
     },
     {
       title: "Not Defteri",
