@@ -8,7 +8,7 @@ export default function Projects() {
       description:
         "Tailwind CSS ile geliştirilmiş modern ve sade bir portföy sitesi.",
       tech: ["Tailwind CSS", "HTML"],
-      link: "https://beratgnl.netlify.app",
+      link: "https://beratarif.netlify.app",
     },
     {
       title: "Temel Portföy Sitesi",
