@@ -40,7 +40,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        © 2025 Made Developed By Berat Arif G.
+        © 2025 Made By Berat Arif G.
       </div>
     </footer>
   );

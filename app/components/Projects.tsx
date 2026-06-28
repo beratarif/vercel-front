@@ -1,62 +1,64 @@
-import { link } from "fs";
-import { title } from "process";
+// Olmayan project1Image importunu kaldırdık veya onun yerine tailwind.png'yi bağladık
+import project2Image from "@/app/assets/image/project2.png";
+import project3Image from "@/app/assets/image/project3.png";
+import project4Image from "@/app/assets/image/project4.png";
+import tailwindImage from "@/app/assets/image/tailwind.png";
 
 export default function Projects() {
   const projects = [
     {
+      image: tailwindImage, // project1 yerine klasöründe var olan tailwind.png'yi verdik
       title: "Tailwind Css Portföy",
-      description:
-        "Tailwind CSS ile geliştirilmiş modern ve sade bir portföy sitesi.",
+      description: "Tailwind CSS ile geliştirilmiş modern ve sade bir portföy sitesi.",
       tech: ["Tailwind CSS", "HTML"],
       link: "https://beratarif.netlify.app",
     },
     {
+      image: project2Image,
       title: "Temel Portföy Sitesi",
-      description:
-        "Baştan yapılmış her hangi bir teknoloji kullanılmadan oluşturulmuş bir portföy sitesi.",
+      description: "Baştan yapılmış herhangi bir teknoloji kullanılmadan oluşturulmuş bir portföy sitesi.",
       tech: ["HTML", "CSS", "JavaScript"],
       link: "https://beratarifgnl.netlify.app",
-
     },
     {
+      image: project3Image,
       title: "JSON Login Sistemi",
-      description:
-        "Kullanıcı verilerinin JSON formatında tutulduğu bir giriş sistemi.",
+      description: "Kullanıcı verilerinin JSON formatında tutulduğu bir giriş sistemi.",
       tech: ["JSON", "Auth"],
       link: "https://jsonlogin.netlify.app",
     },
     {
+      image: project4Image,
       title: "Not Defteri",
-      description:
-        "JSON yapısı kullanılarak kayıt alan bir not defteri uygulaması.",
+      description: "JSON yapısı kullanılarak kayıt alan bir not defteri uygulaması.",
       tech: ["JSON", "LocalStorage"],
       link: "https://notdefterijson.netlify.app",
     },
     {
+      image: project2Image, // default-project.png olmadığı için var olan bir resmi yedek yazdık
       title: "Hava Durumu Uygulaması",
-      description:
-        "Harici API kullanılarak geliştirilmiş bir hava durumu uygulaması.",
+      description: "Harici API kullanılarak geliştirilmiş bir hava durumu uygulaması.",
       tech: ["API", "JavaScript"],
       link: "https://havadurumujson.netlify.app",
     },
     {
+      image: project3Image, 
       title: "React Portföy Sitesi",
-      description:
-        "React kullanarak frontend becerilerimi geliştirmek için oluşturduğum portföy sitesi.",
+      description: "React kullanarak frontend becerilerimi geliştirmek için oluşturduğum portföy sitesi.",
       tech: ["React", "Components"],
       link: "https://reactfirtweb.netlify.app",
     },
     {
+      image: project4Image, 
       title: "Code Proo",
-      description:
-        "Yazılım öğrenmek isteyenler için çoklu programlama dillerini içeren bir web platformu.",
-      tech:["JavaScript" , "HTML/CSS"],
+      description: "Yazılım öğrenmek isteyenler için çoklu programlama dillerini içeren bir web platformu.",
+      tech: ["JavaScript", "HTML/CSS"],
       link: "https://codeproo.netlify.app",
     },
     {
+      image: tailwindImage, 
       title: "Kişisel Portföy Sitesi",
-      description:
-        "Modern, responsive ve animasyonlu bir portföy tasarımı. Next.js ve TypeScript kullanıldı.",
+      description: "Modern, responsive ve animasyonlu bir portföy tasarımı. Next.js ve TypeScript kullanıldı.",
       tech: ["Next.js", "TypeScript", "CSS"],
       link: "#",
     },
@@ -70,22 +72,32 @@ export default function Projects() {
         </h2>
 
         <div className="projects-grid">
-          {projects.map((project, index) => (
-            <div key={index} className="project-card">
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
+          {projects.map((project, index) => {
+            const imageSrc = project.image && typeof project.image === "object" && "src" in project.image
+              ? project.image.src
+              : (project.image as string);
 
-              <div className="tech-stack">
-                {project.tech.map((tech, i) => (
-                  <span key={i}>{tech}</span>
-                ))}
+            return (
+              <div key={index} className="project-card">
+                <img 
+                  src={imageSrc} 
+                  alt={project.title} 
+                />
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+
+                <div className="tech-stack">
+                  {project.tech.map((tech, i) => (
+                    <span key={i}>{tech}</span>
+                  ))}
+                </div>
+
+                <a href={project.link} target="_blank" rel="noopener noreferrer">
+                  Projeyi İncele →
+                </a>
               </div>
-
-              <a href={project.link} target="_blank">
-                Projeyi İncele →
-              </a>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
