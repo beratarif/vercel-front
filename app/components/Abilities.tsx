@@ -36,6 +36,7 @@ export default function Abilities() {
                         <li>Node.js</li>
                         <li>MySQL</li>
                         <li>Resend</li>
+                        <li>Next.js API</li>
                     </ul>
                 </div>
                 <div className="abilities-item">
