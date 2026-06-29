@@ -35,6 +35,7 @@ export default function Abilities() {
                     <ul>
                         <li>Node.js</li>
                         <li>MySQL</li>
+                        <li>Resend</li>
                     </ul>
                 </div>
                 <div className="abilities-item">
