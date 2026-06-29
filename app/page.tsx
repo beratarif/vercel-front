@@ -4,6 +4,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Abilities from "./components/Abilities";
 import "./style.css";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
         <Navbar />
         <Hero />
         <About />
+        <Abilities />
         <Projects />
         <Contact />
         <Footer />

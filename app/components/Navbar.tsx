@@ -13,6 +13,7 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <div className="nav-list desktop">
           <a className="nav-link" href="#about">Hakkımda</a>
+          <a className="nav-link" href="#abilities">Yetenekler</a>
           <a className="nav-link" href="#projects">Projeler</a>
           <a className="nav-link" href="#contact">İletişim</a>
         </div>
@@ -31,13 +32,16 @@ export default function Navbar() {
       {/* Mobile Menu */}
       <div className={`mobile-menu ${menuOpen ? "show" : ""}`}>
         <a href="#about" onClick={() => setMenuOpen(false)}>
-          About
+          Hakkımda
+        </a>
+        <a href="#abilities" onClick={() => setMenuOpen(false)}>
+          Yetenekler
         </a>
         <a href="#projects" onClick={() => setMenuOpen(false)}>
-          Projects
+          Projeler
         </a>
         <a href="#contact" onClick={() => setMenuOpen(false)}>
-          Contact
+          İletişim
         </a>
       </div>
     </nav>

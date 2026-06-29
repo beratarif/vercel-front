@@ -2,6 +2,9 @@
 import project2Image from "@/app/assets/image/project2.png";
 import project3Image from "@/app/assets/image/project3.png";
 import project4Image from "@/app/assets/image/project4.png";
+import project5Image from "@/app/assets/image/project5.png";
+import project6Image from "@/app/assets/image/project6.png";
+import project7Image from "@/app/assets/image/project7.png";
 import tailwindImage from "@/app/assets/image/tailwind.png";
 
 export default function Projects() {
@@ -35,32 +38,25 @@ export default function Projects() {
       link: "https://notdefterijson.netlify.app",
     },
     {
-      image: project2Image, // default-project.png olmadığı için var olan bir resmi yedek yazdık
+      image: project5Image, // default-project.png olmadığı için var olan bir resmi yedek yazdık
       title: "Hava Durumu Uygulaması",
       description: "Harici API kullanılarak geliştirilmiş bir hava durumu uygulaması.",
       tech: ["API", "JavaScript"],
       link: "https://havadurumujson.netlify.app",
     },
     {
-      image: project3Image, 
-      title: "React Portföy Sitesi",
-      description: "React kullanarak frontend becerilerimi geliştirmek için oluşturduğum portföy sitesi.",
-      tech: ["React", "Components"],
-      link: "https://reactfirtweb.netlify.app",
-    },
-    {
-      image: project4Image, 
+      image: project7Image, // default-project.png olmadığı için var olan bir resmi yedek yazdık
       title: "Code Proo",
       description: "Yazılım öğrenmek isteyenler için çoklu programlama dillerini içeren bir web platformu.",
       tech: ["JavaScript", "HTML/CSS"],
       link: "https://codeproo.netlify.app",
     },
     {
-      image: tailwindImage, 
+      image: project6Image, 
       title: "Kişisel Portföy Sitesi",
       description: "Modern, responsive ve animasyonlu bir portföy tasarımı. Next.js ve TypeScript kullanıldı.",
       tech: ["Next.js", "TypeScript", "CSS"],
-      link: "#",
+      link: "https://beratarif.vercel.app",
     },
   ];
 
