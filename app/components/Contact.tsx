@@ -8,24 +8,41 @@ export default function Contact() {
     email: "",
     message: "",
   });
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(form);
-    alert("Mesaj gönderildi");
+    setStatus("loading");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+
+      if (!res.ok) throw new Error();
+
+      setStatus("success");
+      setForm({ name: "", email: "", message: "" });
+    } catch {
+      setStatus("error");
+    }
   };
+
   return (
     <section id="contact" className="contact-section">
       <div className="contact-container">
         <div className="contact-info">
           <h2>Benimle İletişime Geç</h2>
           <p>
-            Bir proje fikrin mi var? iş birliği mi düşünüyorsun? Hemen mesaj
+            Bir proje fikrin mi var? İş birliği mi düşünüyorsun? Hemen mesaj
             bırak
           </p>
 
@@ -33,7 +50,9 @@ export default function Contact() {
             <a href="http://github.com/beratarif" target="_blank">
               GitHub
             </a>
-            <a href="https://">LinkedIn</a>
+            <a href="https://linkedin.com/in/beratarif" target="_blank">
+              LinkedIn
+            </a>
             <a href="mailto:gonulberat1@gmail.com">E-Mail</a>
           </div>
         </div>
@@ -65,7 +84,17 @@ export default function Contact() {
             onChange={handleChange}
             required
           />
-          <button type="submit">Mesaj Gönder</button>
+
+          <button type="submit" disabled={status === "loading"}>
+            {status === "loading" ? "Gönderiliyor..." : "Mesaj Gönder"}
+          </button>
+
+          {status === "success" && (
+            <p className="form-success">Mesajınız gönderildi, teşekkürler!</p>
+          )}
+          {status === "error" && (
+            <p className="form-error">Bir hata oluştu, lütfen tekrar deneyin.</p>
+          )}
         </form>
       </div>
     </section>

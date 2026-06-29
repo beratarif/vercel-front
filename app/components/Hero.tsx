@@ -11,7 +11,7 @@ export default function Hero(){
       </p>
       
       <div className="links">
-        <a href="#projects" className="button">Projelerim / View My Pojects</a>
+        <a href="#projects" className="button">Projelerim / View My Projects</a>
         <a href="#contact" className="button">İletişim / Contact</a>
       </div>
     </section>
