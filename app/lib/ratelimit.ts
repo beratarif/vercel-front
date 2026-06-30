@@ -11,4 +11,3 @@ export const ratelimit=new Ratelimit({
     limiter: Ratelimit.slidingWindow(3, "10 m"),
     analytics: true,
 });
-
