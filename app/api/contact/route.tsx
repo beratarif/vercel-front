@@ -41,6 +41,7 @@ export async function POST(req: Request) {
       );
     }
     await resend.emails.send({
+      
       from: "Portfolio Contact <onboarding@resend.dev>", // domain doğrulamadan önce bu kalsın
       to: process.env.CONTACT_EMAIL!,
       replyTo: email,

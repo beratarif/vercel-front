@@ -20,6 +20,7 @@ body {
   top: 0;
   left: 0;
   background-color: #0a0a0a;
+  z-index: 1000;
 }
 
 .nav-container {
@@ -383,6 +384,7 @@ body {
   border-radius: 20px;
   transition: 0.3s;
   border: 1px solid #222;
+  z-index: 1;
 }
 
 .project-card:hover {
